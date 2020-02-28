@@ -15,5 +15,13 @@
     ],
     "import/prefer-default-export": "off",
     "comma-dangle": ["error", "always-multiline"]
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-plugin-root-import": {
+        "rootPathPrefix": "~",
+        "rootPathSuffix": "src"
+      }
+    }
   }
 }
