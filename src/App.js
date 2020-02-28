@@ -1,13 +1,6 @@
 import React from 'react';
+import Routes from './routes';
 
-import Test from '~/components/Teste';
-
-function App() {
-  return (
-    <div>
-      <Test />
-    </div>
-  );
-}
+const App = () => <Routes />;
 
 export default App;
