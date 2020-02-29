@@ -67,3 +67,5 @@ const Button = styled.button.attrs({
       }
     `}
 `;
+
+export default Button;
