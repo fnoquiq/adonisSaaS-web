@@ -14,8 +14,7 @@
       }
     ],
     "import/prefer-default-export": "off",
-    "comma-dangle": ["error", "always-multiline"],
-    "arrow-parens": ["as-needed"]
+    "comma-dangle": ["error", "always-multiline"]
   },
   "settings": {
     "import/resolver": {
