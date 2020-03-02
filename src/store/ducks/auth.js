@@ -16,6 +16,7 @@ export const INITIAL_STATE = Immutable({
 
 export const success = (state, { token }) => {
   state.merge({ signedIn: true, token });
+  return null;
 };
 
 export const reducer = createReducer(INITIAL_STATE, {
