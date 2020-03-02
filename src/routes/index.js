@@ -4,6 +4,8 @@ import { Switch, Route } from 'react-router-dom';
 
 import history from './history';
 
+import Private from './private';
+
 import Main from '~/pages/Main';
 import SignUp from '~/pages/Auth/SignUp';
 import SignIn from '~/pages/Auth/SignIn';
@@ -13,7 +15,7 @@ const Routes = () => (
     <Switch>
       <Route path="/signin" component={SignIn} />
       <Route path="/signup" component={SignUp} />
-      <Route path="/" exact component={Main} />
+      <Private path="/" exact component={Main} />
     </Switch>
   </ConnectedRouter>
 );
