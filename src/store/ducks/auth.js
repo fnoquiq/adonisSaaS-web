@@ -15,10 +15,8 @@ export const INITIAL_STATE = Immutable({
   token: localStorage.getItem('@Omni:token') || null,
 });
 
-export const success = (state, { token }) => {
+export const success = (state, { token }) =>
   state.merge({ signedIn: true, token });
-  return null;
-};
 
 export const logout = state => state.merge({ signedIn: false, token: null });
 
