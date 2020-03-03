@@ -32,10 +32,10 @@ const colors = {
   `,
   gray: css`
     background: #b9bbb3;
-    color: #666;
+    color: #666666;
 
     &:hover {
-      background: #999;
+      background: #999999;
     }
   `,
 };
