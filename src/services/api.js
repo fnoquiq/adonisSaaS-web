@@ -6,7 +6,6 @@ const api = axios.create({
 });
 
 api.interceptors.request.use(config => {
-  console.log(store.getState());
   const { token } = store.getState().auth;
   const { active: team } = store.getState().teams;
 
