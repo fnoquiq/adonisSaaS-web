@@ -4,11 +4,13 @@ import { Route, Redirect } from 'react-router-dom';
 
 import store from '~/store';
 
+const { signedIn } = store.getState().auth;
+
 const PrivateRoute = ({ component: Component, ...rest }) => (
   <Route
     {...rest}
     render={props =>
-      store.getState().auth.signedIn ? (
+      signedIn ? (
         <Component {...props} />
       ) : (
         <Redirect
